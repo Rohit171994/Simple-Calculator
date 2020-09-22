@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        body {
+            background-color: rgb(243, 112, 221);
+        }
+
+        #container {
+            border: 2px solid blue;
+            width: 260px;
+            margin: auto;
+            background-color: black;
+            position: relative;
+            top: 100px;
+        }
+
+        input {
+            background-color: lightblue;
+
+            border-radius: 5px;
+            width: 60px;
+            height: 60px;
+            font-size: 1.5em;
+
+        }
+
+        input:hover {
+            background-color: lightsalmon;
+        }
+
+        #screen {
+            width: 245px;
+            height: 50px;
+            background-color: lightgreen;
+            margin-left: 3.5px;
+            margin-bottom: 10px;
+        }
+
+        #clr,
+        #plus,
+        #equal {
+            width: 124px;
+        }
+
+        h1 {
+            color: red;
+            font-size: bold;
+            margin-left: 5px;
+        }
+
+        #clr,
+        #el {
+            margin-left: 3.5px;
+        }
+
+        #dot {
+            margin-bottom: 10px;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div id="container">
+        <div>
+            <h1><U>Simple Calculator</U></h1>
+            <input type="text" id="screen" />
+
+        </div>
+        <div>
+            <input type="button" id="clr" value="clr" onclick="clr()" />
+
+            <input type="button" id="plus" value="+" onclick="arr('+')" />
+        </div>
+        <div>
+            <input type="button" id="el" value="1" onclick="arr('1')" />
+            <input type="button" value="2" onclick="arr('2')" />
+            <input type="button" value="3" onclick="arr('3')" />
+            <input type="button" value="-" onclick="arr('-')" />
+        </div>
+        <div>
+            <input type="button" id="el" value="4" onclick="arr('4')" />
+            <input type="button" value="5" onclick="arr('5')" />
+            <input type="button" value="6" onclick="arr('6')" />
+            <input type="button" value="/" onclick="arr('/')" />
+        </div>
+        <div>
+            <input type="button" id="el" value="7" onclick="arr('7')" />
+            <input type="button" value="8" onclick="arr('8')" />
+            <input type="button" value="9" onclick="arr('9')" />
+            <input type="button" value="*" onclick="arr('*')" />
+        </div>
+        <div id="dot">
+            <input type="button" id="el" value="." onclick="arr('.')" />
+            <input type="button" value="0" onclick="arr('0')" />
+            <input type="button" id="equal" value="=" onclick="answr()" />
+        </div>
+    </div>
+    <script src="calculator.js"></script>
+</body>
+
+</html>
